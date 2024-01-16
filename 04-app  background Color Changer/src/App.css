@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded; /* Tailwind button styles */
+  outline: none; /* Remove the outline on focus */
+  -webkit-tap-highlight-color: transparent; /* Disable tap highlight */
+}
+
+.custom-button:focus,
+.custom-button:active {
+  outline: none; /* Remove the outline on click */
+}
